@@ -1,0 +1,155 @@
+.glass {
+    background: rgba(255, 255, 255, 0.2); /* Adjust the transparency as needed */
+    border-radius: 15px;
+    margin: 50px 20px; /* Adjust the margin as needed */
+    margin-top: 100px;
+    padding: 20px;
+    backdrop-filter: blur(10px); /* Adds the frosted glass effect */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.glass .about_person_area {
+    background: transparent; /* Ensures the section background is transparent within the glass container */
+}
+
+.glass img {
+    max-width: 80%; /* Adjust the percentage as needed */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.glass .download_btn {
+    display: inline-block;
+    width: 80%; /* Set the width to match the img */
+    margin-top: 30px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px; /* Make it slightly round */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Added transition for a smoother effect */
+}
+
+.glass .download_btn:hover {
+    background-color: #2980b9;
+    transform: scale(1.05); /* Scale up on hover for a subtle effect */
+}
+
+
+/* Media Query for Responsive Styles */
+@media (max-width: 768px) {
+    .glass {
+        margin: 20px auto; /* Adjust the margin as needed for smaller screens */
+    }
+}
+
+
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Section Styles */
+.about_person_area {
+    background-color: #f8f8f8;
+    padding: 50px 0;
+}
+
+
+/* Person Details Styles */
+.person_details {
+    color: #333;
+}
+
+.person_details h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.person_details h3 {
+    font-size: 1.8em;
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+.person_details p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.person_information table {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.person_information td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.person_information td:first-child {
+    font-weight: bold;
+    width: 30%;
+}
+.social_icon {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social_icon li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social_icon a {
+    display: block;
+    background-color: #0077B5; /* LinkedIn theme color */
+    color: #fff;
+    font-size: 1.5em;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 40px; /* Equal width and height for a square shape */
+    height: 40px;
+    line-height: 40px; /* Vertically align the icon */
+    transition: background-color 0.3s ease;
+}
+
+.social_icon i {
+    vertical-align: middle;
+}
+
+.social_icon a:hover {
+    background-color: #005685; /* Darker shade on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .glass {
+        margin: 20px 10px; /* Adjust the margin as needed for smaller screens */
+    }
+
+    /* Adjust margins for navbar or other surrounding elements as needed */
+    .navbar {
+        margin-bottom: 20px;
+    }
+
+    .col-md-5,
+    .col-md-7 {
+        width: 100%;
+    }
+
+    .person_img {
+        text-align: center;
+    }
+}

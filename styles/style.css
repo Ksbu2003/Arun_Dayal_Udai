@@ -1,0 +1,16 @@
+body{
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  background-image: repeating-linear-gradient(
+    30deg,
+  #ebe9f0,
+  #ebe9f0 2.5px,
+  #dbd8de 2.5px,
+  #dbd8de 5.0px
+  );
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+
